@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../scss/customscss.scss" />
+    <title>Document</title>
+  </head>
+  <body class="d-flex flex-column" style="height: 100vh">
+    <nav class="navbar navbar-expand-md navbar-dark p-4 container-lg">
+      <a class="navbar-brand" href="#">
+        <img
+          src="../assets/Icon awesome-football-ball.png"
+          alt=""
+          width="30"
+          height="24"
+          class="d-inline-block align-text-top"
+        />
+        <span class="fw-bold ms-2 text-linear-gradient--black-green"
+          >Go Sports</span
+        >
+      </a>
+
+      <!-- Burger Nav -->
+      <button
+        class="navbar-toggler md-darken-toggler-border"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon md-darken-toggler"></span>
+      </button>
+
+      <!-- Nav Links -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a
+              class="nav-link md-darken-text"
+              aria-current="page"
+              href="./index.html"
+              >Home</a
+            >
+          </li>
+          <li class="nav-item ms-md-4">
+            <a class="nav-link md-darken-text" href="./measurements.html"
+              >Measurements</a
+            >
+          </li>
+          <li class="nav-item ms-md-4">
+            <a class="nav-link md-darken-text" href="./sign-up.html">Sign up</a>
+          </li>
+          <li class="nav-item ms-md-4">
+            <a class="nav-link md-darken-text" href="./log-in.html">Log in</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- White bg Left -->
+    <div
+      class="bg-light position-absolute vh-100 md-top-position"
+      style="width: 45%; z-index: -1"
+    ></div>
+    <main class="container-lg position-relative" style="flex-grow: 1">
+      <div
+        class="position-absolute top-50 translate-middle-y md-position-center text-white"
+        style="width: 40%; right: 10%"
+      >
+        <h2 class="fw-bold mb-4">Enter The Spirit Again</h2>
+        <form>
+          <div class="mb-3">
+            <label for="inputEmail" class="form-label">Email address</label>
+            <input type="email" class="form-control bg-white" id="inputEmail" />
+          </div>
+          <div class="mb-3">
+            <label for="inputPassword" class="form-label">Password</label>
+            <input
+              type="password"
+              class="form-control bg-white"
+              id="inputPassword"
+            />
+          </div>
+
+          <!-- Launch Modal -->
+          <button
+            type="button"
+            class="btn btn-primary text-white fw-bold px-5 py-2 mt-3"
+            style="font-size: 13px"
+            data-bs-toggle="modal"
+            data-bs-target="#loginModal"
+          >
+            Log in
+          </button>
+        </form>
+      </div>
+    </main>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="loginModal"
+      role="dialog"
+      aria-labelledby="loginModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="loginModalLabel">Successful Log In</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              data-bs-target="#loginModal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            Welcome back. Lorem ipsum dolor sit amet, consectetur adipisicing
+            elit. Consectetur voluptates nulla cupiditate omnis sed. Incidunt!
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer
+      class="container-lg d-flex justify-content-end align-items-center mt-3 p-4"
+      style="font-size: 12px"
+    >
+      <small class="text-white">Copyright-2022</small>
+      <div
+        class="icons text-white d-flex justify-content-end"
+        style="width: 45%"
+      >
+        <i class="bi bi-facebook"></i>
+        <i class="bi bi-instagram ms-2"></i>
+        <i class="bi bi-twitter ms-2"></i>
+        <i class="bi bi-snapchat ms-2"></i>
+      </div>
+    </footer>
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>

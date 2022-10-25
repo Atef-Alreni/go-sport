@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../scss/customscss.scss" />
+    <title>Document</title>
+  </head>
+  <body class="d-flex flex-column" style="height: 100vh">
+    <nav class="navbar navbar-expand-md navbar-dark p-4 container-lg">
+      <a class="navbar-brand" href="#">
+        <img
+          src="../assets/Icon awesome-football-ball.png"
+          alt=""
+          width="30"
+          height="24"
+          class="d-inline-block align-text-top"
+        />
+        <span class="fw-bold ms-2 text-linear-gradient--white-green"
+          >Go Sports</span
+        >
+      </a>
+
+      <!-- Burger Nav -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Nav Links -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item ms-md-4">
+            <a class="nav-link" href="./measurements.html">Measurements</a>
+          </li>
+          <li class="nav-item ms-md-4">
+            <a class="nav-link" href="./sign-up.html">Sign up</a>
+          </li>
+          <li class="nav-item ms-md-4">
+            <a class="nav-link" href="./log-in.html">Log in</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <main class="container-lg" style="flex-grow: 1">
+      <div class="row align-items-center justify-content-center h-100">
+        <h1
+          class="col-lg-6 col-md-5 display-3 text-center text-linear-gradient--blue-pink fw-bold mt-4 mt-md-0"
+        >
+          Go!! <br />
+          Join the Sport
+        </h1>
+        <form
+          class="col-lg-4 col-md-5 col-sm-8 col-10 text-white bg-linear-gradient--blue-pink px-4 px-sm-5 py-4 mx-5 my-5"
+          style="border-radius: 20px"
+        >
+          <div class="mb-3">
+            <label for="inputName" class="form-label">Name</label>
+            <input
+              type="text"
+              class="form-control bg-white"
+              id="inputName"
+              aria-describedby="name"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="inputEmail" class="form-label">Email address</label>
+            <input
+              type="email"
+              class="form-control bg-white"
+              id="inputEmail"
+              aria-describedby="emailHelp"
+            />
+            <div
+              id="emailHelp"
+              class="form-text text-white fw-light"
+              style="font-size: 12px"
+            >
+              We'll never share your email with anyone else.
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="inputPassword" class="form-label">Password</label>
+            <input
+              type="password"
+              class="form-control bg-white"
+              id="inputPassword"
+            />
+          </div>
+          <button
+            type="button"
+            class="btn btn-primary text-white fw-bold px-5 py-2 mt-3"
+            style="font-size: 13px"
+            data-bs-toggle="modal"
+            data-bs-target="#signupModal"
+          >
+            Sign up
+          </button>
+        </form>
+      </div>
+    </main>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="signupModal"
+      role="dialog"
+      aria-labelledby="signupModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="signupModalLabel">Account Created</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              data-bs-target="#loginModal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            Congradulations on making your account. Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Molestiae pariatur est unde molestias!
+            Facilis architecto, impedit voluptas a saepe, velit dolore
+            accusantium, assumenda omnis incidunt sequi? Qui excepturi quo
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer
+      class="container-lg d-flex justify-content-end align-items-center mt-3 p-4"
+      style="font-size: 12px"
+    >
+      <small class="text-white">Copyright-2022</small>
+      <div
+        class="icons text-white d-flex justify-content-end"
+        style="width: 45%"
+      >
+        <i class="bi bi-facebook"></i>
+        <i class="bi bi-instagram ms-2"></i>
+        <i class="bi bi-twitter ms-2"></i>
+        <i class="bi bi-snapchat ms-2"></i>
+      </div>
+    </footer>
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>
